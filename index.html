@@ -3,166 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carl Anthony Barnachea | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Carl Anthony Barnachea | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <header>
         <div class="container">
-            <a href="#" class="logo">CAB</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Carl Anthony Barnachea</h1>
-                <p class="tagline">Professional [Your Profession]</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/profile.jpg" alt="Carl Anthony Barnachea">
-            </div>
+            <h1>Carl Anthony Barnachea</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
             <div class="about-content">
+                <img src="images/profile.jpg" alt="Carl Anthony Barnachea" class="profile-img">
                 <div class="about-text">
-                    <p>Hello! I'm Carl Anthony Barnachea, a [your profession] based in [your location].</p>
-                    <p>Age: [Your Age]</p>
-                    <p>[Your detailed introduction - 2-3 paragraphs about your background, passions, and what you do]</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">[X]</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">[Y]</span>
-                        <span class="stat-label">Projects Completed</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">[Z]</span>
-                        <span class="stat-label">Happy Clients</span>
-                    </div>
+                    <p><strong>Age:</strong> [Your Age]</p>
+                    <p>[Your introduction paragraph here. Describe who you are, what you do, and your professional background.]</p>
+                    <p>[Second paragraph with more details about your experience or interests.]</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="images/skill1-icon.png" alt="Skill 1">
-                    </div>
-                    <h3>Skill 1</h3>
-                    <p>Description of skill 1 and your proficiency level.</p>
-                    <a href="certificate1.pdf" class="skill-link">View Certification <i class="fas fa-external-link-alt"></i></a>
+                    <img src="images/skill1.png" alt="Skill 1" class="skill-icon">
+                    <h3>Skill Name 1</h3>
+                    <p>Description of your skill and proficiency level.</p>
+                    <a href="#" class="btn">View Certificate</a>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="images/skill2-icon.png" alt="Skill 2">
-                    </div>
-                    <h3>Skill 2</h3>
-                    <p>Description of skill 2 and your proficiency level.</p>
-                    <a href="project1.html" class="skill-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <img src="images/skill2.png" alt="Skill 2" class="skill-icon">
+                    <h3>Skill Name 2</h3>
+                    <p>Description of your skill and proficiency level.</p>
+                    <a href="#" class="btn">View Project</a>
                 </div>
                 <!-- Add more skill cards as needed -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section resume">
-        <div class="container">
-            <h2 class="section-title">My Resume</h2>
+        <section id="resume" class="section">
+            <h2>My Resume</h2>
             <div class="resume-options">
-                <a href="resume.pdf" download class="resume-btn">
-                    <i class="fas fa-file-pdf"></i> Download PDF
-                </a>
-                <a href="resume.html" class="resume-btn">
-                    <i class="fas fa-eye"></i> View Online
-                </a>
+                <a href="resume.pdf" download class="btn">Download PDF</a>
+                <a href="#resume-preview" class="btn">View Online</a>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2020 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Current Position</h3>
-                        <p>Company Name</p>
-                        <p>Description of responsibilities and achievements.</p>
-                    </div>
+            <div id="resume-preview" class="resume-preview">
+                <!-- You can add key resume highlights here -->
+                <h3>Professional Experience</h3>
+                <div class="experience">
+                    <h4>Job Title</h4>
+                    <p class="company">Company Name | 2020-Present</p>
+                    <ul>
+                        <li>Responsibility or achievement</li>
+                        <li>Another responsibility or achievement</li>
+                    </ul>
                 </div>
-                <!-- Add more timeline items for experience/education -->
+                <!-- Add more experiences -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
             <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+1 (123) 456-7890</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Your City, Country</p>
-                </div>
+                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/yourhandle"><i class="fab fa-twitter"></i></a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
             <p>&copy; <span id="year"></span> Carl Anthony Barnachea. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Minimal Static JavaScript -->
     <script>
-        // Just to display current year in footer
+        // Simple script to show current year
         document.getElementById('year').textContent = new Date().getFullYear();
-        
-        // Simple smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
     </script>
 </body>
 </html>
