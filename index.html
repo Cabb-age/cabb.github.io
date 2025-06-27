@@ -3,360 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carl Anthony Barnachea | Skills & Expertise</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --gray: #6c757d;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
-            color: var(--dark);
-            line-height: 1.6;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 30px 0;
-            background: linear-gradient(135deg, var(--primary) 0%, #1a2530 100%);
-            color: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .skill-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            display: flex;
-            height: 100%;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .skill-icon {
-            width: 120px;
-            background: linear-gradient(135deg, var(--secondary) 0%, #1f6fb5 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2.5rem;
-            flex-shrink: 0;
-        }
-
-        .skill-content {
-            padding: 30px;
-            flex-grow: 1;
-        }
-
-        .skill-title {
-            color: var(--primary);
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .skill-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 4px;
-            background: var(--secondary);
-            border-radius: 2px;
-        }
-
-        .skill-details {
-            color: var(--dark);
-            font-size: 1.1rem;
-        }
-
-        .skill-details p {
-            margin-bottom: 15px;
-            padding-left: 25px;
-            position: relative;
-        }
-
-        .skill-details p::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-size: 1.4rem;
-            top: -3px;
-        }
-
-        .skill-details strong {
-            color: var(--primary);
-            font-weight: 600;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .tech-tag {
-            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
-            color: var(--dark);
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-
-        .tech-tag.primary {
-            background: linear-gradient(135deg, var(--secondary) 0%, #1f6fb5 100%);
-            color: white;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            margin-top: 30px;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--gray);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact-item:hover {
-            color: var(--secondary);
-        }
-
-        @media (max-width: 768px) {
-            .skills-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .skill-card {
-                flex-direction: column;
-            }
-            
-            .skill-icon {
-                width: 100%;
-                height: 100px;
-            }
-            
-            header h1 {
-                font-size: 2.2rem;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .skill-content {
-                padding: 20px;
-            }
-            
-            .skill-title {
-                font-size: 1.6rem;
-            }
-        }
-    </style>
+    <title>Carl Anthony Barnachea | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <h1>Carl Anthony Barnachea</h1>
-            <p>Skills & Expertise Portfolio</p>
-        </header>
-        
-        <div class="skills-container">
-            <!-- Game Development -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-gamepad"></i>
-                </div>
-                <div class="skill-content">
-                    <h2 class="skill-title">Game Development</h2>
-                    <div class="skill-details">
-                        <p><strong>Godot Engine</strong> specialist with Unity experience.</p>
-                        <p>Learning through prototypes and small projects.</p>
-                        <p>AI-assisted development.</p>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag primary">Godot Engine</span>
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">Game Design</span>
-                        <span class="tech-tag">AI Tools</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Digital Art -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <div class="skill-content">
-                    <h2 class="skill-title">Digital Art</h2>
-                    <div class="skill-details">
-                        <p><strong>Aseprite</strong> for pixel art and animation.</p>
-                        <p><strong>IbisPaint</strong> for digital illustration.</p>
-                        <p>Some <strong>Inkscape</strong> for vectors.</p>
-                        <p>All original work.</p>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag primary">Aseprite</span>
-                        <span class="tech-tag primary">IbisPaint</span>
-                        <span class="tech-tag">Inkscape</span>
-                        <span class="tech-tag">Pixel Art</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Web Development -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <div class="skill-content">
-                    <h2 class="skill-title">Web Development</h2>
-                    <div class="skill-details">
-                        <p>Building responsive websites and web apps.</p>
-                        <p>Using modern tools and frameworks.</p>
-                        <p>AI assistance for faster development.</p>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag primary">HTML/CSS</span>
-                        <span class="tech-tag primary">JavaScript</span>
-                        <span class="tech-tag">Responsive Design</span>
-                        <span class="tech-tag">Web Apps</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- System Development -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <div class="skill-content">
-                    <h2 class="skill-title">System Development</h2>
-                    <div class="skill-details">
-                        <p>Built some POS systems and business apps.</p>
-                        <p>Problem-solving with code and AI tools.</p>
-                        <p>Database integration and management.</p>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag primary">POS Systems</span>
-                        <span class="tech-tag primary">Business Apps</span>
-                        <span class="tech-tag">Database</span>
-                        <span class="tech-tag">System Architecture</span>
-                    </div>
-                </div>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <footer>
-            <p>&copy; 2023 Carl Anthony Barnachea. All rights reserved.</p>
-            <div class="contact-info">
-                <a href="mailto:your.email@example.com" class="contact-item">
-                    <i class="fas fa-envelope"></i> your.email@example.com
-                </a>
-                <a href="https://github.com/yourusername" class="contact-item">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="#" class="contact-item">
-                    <i class="fas fa-file-pdf"></i> Resume
-                </a>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="Barnachea1x1 (1).jpg" alt="Carl Anthony Barnachea" class="profile-img">
+                <div class="about-text">
+                    <p><strong>Age:</strong> [Your Age]</p>
+                    <p>[Your introduction paragraph here. Describe who you are, what you do, and your professional background.]</p>
+                    <p>[Second paragraph with more details about your experience or interests.]</p>
+                </div>
             </div>
-        </footer>
-    </div>
-    
+        </section>
+
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                   
+                    <h3>Project Management</h3>
+                    <p>Experience leading a team to make a game. Assigned to Plan, Schedule, Coordination, Tracking Progress,  Management, and Communication with the team</p>
+                    <a href="#" class="btn">View Certificate</a>
+                 </div>
+                <div class="skill-card">
+        
+                    <h3>Web Design</h3>
+                    <p>Creating a visual pleasing system. using modern tools such as Figma and Canva.</p>
+                    <a href="#" class="btn">View Project</a>
+                 </div>
+
+                <div class="skill-card">
+                    
+                    <h3>Python and Java (Basic) </h3>
+                    <p>Possess basic knowledge and understanding of Python and Java, with the ability to apply core programming concepts to assist in software development and problem-solving tasks .</p>
+                    <a href="#" class="btn">View Certificate</a>
+                 </div>
+                <div class="skill-card">
+
+                    <h3>Artist </h3>
+                    <p>Description of your skill and proficiency level.</p>
+                    <a href="#" class="btn">View Certificate</a>
+                 </div>    
+                <!-- Add more skill cards as needed -->
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <h2>My Resume</h2>
+            <div class="resume-options">
+                <a href="resume.pdf" download class="btn">Download PDF</a>
+                <a href="#resume-preview" class="btn">View Online</a>
+            </div>
+            <div id="resume-preview" class="resume-preview">
+                <!-- You can add key resume highlights here -->
+                <h3>Professional Experience</h3>
+                <div class="experience">
+                    <h4>Job Title</h4>
+                    <p class="company">Company Name | 2020-Present</p>
+                    <ul>
+                        <li>Responsibility or achievement</li>
+                        <li>Another responsibility or achievement</li>
+                    </ul>
+                </div>
+                <!-- Add more experiences -->
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Carl Anthony Barnachea. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script>
-        // Add animation to cards when they come into view
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.skill-card');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            cards.forEach(card => {
-                card.style.opacity = 0;
-                card.style.transform = 'translateY(20px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
-            });
-        });
+        // Simple script to show current year
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
