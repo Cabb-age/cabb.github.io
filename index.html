@@ -10,6 +10,7 @@
       margin: 0;
       font-family: 'Roboto', sans-serif;
       color: #333;
+      background-color: #fff;
     }
     header, footer {
       background-color: #f9f9f9;
@@ -21,6 +22,10 @@
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #007BFF;
     }
     .hero {
       padding: 4rem 2rem;
@@ -49,6 +54,11 @@
       padding: 1rem;
       border: 1px solid #ddd;
       border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     .contact-form input,
     .contact-form select,
@@ -56,6 +66,15 @@
       width: 100%;
       margin-bottom: 1rem;
       padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus,
+    .contact-form select:focus {
+      outline: none;
+      border-color: #007BFF;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     }
     button {
       padding: 0.5rem 1rem;
@@ -63,6 +82,8 @@
       color: white;
       border: none;
       cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
     }
     button:hover {
       background: #444;
